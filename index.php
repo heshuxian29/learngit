@@ -15,6 +15,7 @@ $controller = new MatchController();
 $action_name = $a.'Action';
 $controller -> $action_name();//可变方法
 
+echo  '123';die;
 //修改是否执行
 function setCode($controller,$code,$type){
     $file_content = file_get_contents('./'.$controller.'Controller.php');
